@@ -8,6 +8,7 @@ export class Model {
         };
         this.purchases = [];         // all purchases
         this.favoriteStores = [];    // saved favorite stores
+        this.storeChains = [];       // all store chains
     }
 
     // ---- Shopper data ----
@@ -43,4 +44,10 @@ export class Model {
     getFavoritesFor(username) {
         return this.favoriteStores.filter(s => s.username === username);
     }
+    // ---- Credentials validation ----
+    validateCredentials(credentials) {
+    const shopper = this.shoppers.find(s => s.credentials === credentials);
+    return shopper ? shopper.username : null;
+}
+
 }
