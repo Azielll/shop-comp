@@ -4,7 +4,7 @@ import Image from "next/image";
 //and display other relevant info like activity and reports
 
 //Boundary object for dashboard
-export default function Home() {
+export function Dashboard() {
   return (
     <div>
       

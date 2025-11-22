@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 //Boundary object for admin dashboard
-export default function Home() {
+export function AdminDashboard() {
   return (
     <div>
       
